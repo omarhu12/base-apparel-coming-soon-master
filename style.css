@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+#flex {
+  display: flex;
+}
+
+#first {
+  margin-top: 3rem;
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./images/bg-pattern-desktop.svg"),
+    linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-repeat: no-repeat;
+  background-position: top right 20;
+  background-size: 100%;
+  background-color: linea;
+  padding-left: 10rem;
+}
+
+#heroMessage {
+  max-width: 25rem;
+  line-height: 2rem;
+  font-weight: 600;
+  opacity: 0.8;
+  color: hsl(0, 36%, 70%);
+  margin: 2rem 0;
+}
+
+#logo {
+  width: 170px;
+  height: 40px;
+}
+
+h1 {
+  font-size: 4rem;
+  color: hsl(0, 36%, 70%);
+  opacity: 0.7;
+  font-weight: 300;
+  letter-spacing: 0.6rem;
+  text-transform: uppercase;
+  max-width: 10rem;
+  margin-top: 8rem;
+}
+
+h1 strong {
+  color: black;
+  opacity: 1;
+  font-weight: 600;
+}
+
+#btn {
+  display: flex;
+}
+
+#errorMessage {
+  color: hsl(0, 93%, 68%, 0.3);
+  padding: 1rem;
+  visibility: hidden;
+}
+
+.form-control {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+input {
+  width: 448px;
+  height: 64px;
+  position: relative;
+  border-radius: 50px;
+  border: 1px solid hsl(0, 93%, 68%, 0.3);
+  padding: 1rem;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: hsl(0, 93%, 68%, 0.3);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: hsl(0, 93%, 68%, 0.3) red;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: hsl(0, 93%, 68%, 0.3);
+}
+
+button {
+  width: 100px;
+  height: 64px;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  right: 11%;
+  background-image: linear-gradient(
+    135deg,
+    hsl(0, 80%, 86%, 0.9),
+    hsl(0, 74%, 74%, 0.9)
+  );
+  border-color: inherit;
+  border: 1px;
+  border-radius: 50px;
+}
+
+.form-control #error {
+  position: absolute;
+  right: 54%;
+  top: 20%;
+  object-fit: cover;
+  visibility: hidden;
+  width: 24px;
+  height: 24px;
+}
+
+.form-control.error #error,
+.form-control.error #errorMessage {
+  visibility: visible;
+}
+
+/* @media (max-width: 1300px) {
+  #flex {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  #first {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url("./images/bg-pattern-desktop.svg"),
+      linear-gradient(hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+    background-repeat: no-repeat;
+    background-position: top right 20;
+    background-size: 100%;
+    background-color: linea;
+    padding-left: 10rem;
+  }
+
+  #hero{
+    min-width: 400px;
+    max-width: 1300px;
+    height: 750px;
+    object-fit: cover;
+  }
+} */
